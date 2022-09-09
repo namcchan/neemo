@@ -1,4 +1,13 @@
 import { styled } from '@nextui-org/react';
+import {
+  bounceIn,
+  fadeInDown,
+  fadeInLeft,
+  fadeInRight,
+  fadeInUp,
+  rotateIn,
+  zoomIn,
+} from '../animations';
 
 export interface IBannerImagesProps {}
 
@@ -15,6 +24,7 @@ const BannerImagesBox = styled('div', {
     display: 'none',
     top: -200,
     right: 0,
+    animation: `${fadeInLeft} .5s linear`,
     '@sm': {
       display: 'block',
     },
@@ -23,6 +33,7 @@ const BannerImagesBox = styled('div', {
     display: 'none',
     top: -100,
     right: 55,
+    animation: `${fadeInUp} .5s linear`,
     '@sm': {
       display: 'block',
     },
@@ -32,6 +43,7 @@ const BannerImagesBox = styled('div', {
     top: -170,
     right: '36%',
     zIndex: 1,
+    animation: `${fadeInLeft} .5s linear`,
     '@sm': {
       display: 'block',
     },
@@ -41,6 +53,7 @@ const BannerImagesBox = styled('div', {
     top: 110,
     left: '27%',
     zIndex: 2,
+    animation: `${zoomIn} .5s linear`,
     '@sm': {
       display: 'block',
     },
@@ -50,6 +63,7 @@ const BannerImagesBox = styled('div', {
     top: 80,
     left: '15%',
     zIndex: 2,
+    animation: `${bounceIn} .5s linear`,
     '@sm': {
       display: 'block',
     },
@@ -58,6 +72,7 @@ const BannerImagesBox = styled('div', {
     display: 'none',
     top: -170,
     left: '25%',
+    animation: `${fadeInDown} .5s linear`,
     '@sm': {
       display: 'block',
     },
@@ -67,6 +82,7 @@ const BannerImagesBox = styled('div', {
     top: 96,
     left: '47%',
     zIndex: 2,
+    animation: `${zoomIn} .5s linear`,
     '@sm': {
       display: 'block',
     },
@@ -76,6 +92,7 @@ const BannerImagesBox = styled('div', {
     top: 45,
     left: '22%',
     zIndex: 1,
+    animation: `${fadeInUp} .5s linear`,
     '@sm': {
       display: 'block',
     },
@@ -84,6 +101,7 @@ const BannerImagesBox = styled('div', {
     display: 'none',
     top: 20,
     left: 75,
+    animation: `${rotateIn} .5s linear`,
     '@sm': {
       display: 'block',
     },
@@ -93,6 +111,7 @@ const BannerImagesBox = styled('div', {
     top: -76,
     right: '32%',
     zIndex: 1,
+    animation: `${fadeInUp} .5s linear`,
     '@sm': {
       display: 'block',
     },
@@ -101,6 +120,7 @@ const BannerImagesBox = styled('div', {
     display: 'none',
     left: '40%',
     top: -20,
+    animation: `${zoomIn} .5s linear`,
     '@sm': {
       display: 'block',
     },
@@ -109,6 +129,7 @@ const BannerImagesBox = styled('div', {
     display: 'none',
     top: -292,
     right: 45,
+    animation: `${fadeInRight} .5s linear`,
     '@sm': {
       display: 'block',
     },
@@ -118,6 +139,7 @@ const BannerImagesBox = styled('div', {
     top: 100,
     left: '38%',
     zIndex: 2,
+    animation: `${zoomIn} .5s linear`,
     '@sm': {
       display: 'block',
     },
@@ -127,6 +149,7 @@ const BannerImagesBox = styled('div', {
     bottom: 260,
     left: '16%',
     zIndex: 2,
+    animation: `${zoomIn} .5s linear`,
     '@sm': {
       display: 'block',
     },
@@ -134,6 +157,7 @@ const BannerImagesBox = styled('div', {
   '& img:last-child': {
     display: 'block',
     position: 'static',
+    animation: `${zoomIn} .4s linear`,
     '@sm': {
       display: 'none',
     },

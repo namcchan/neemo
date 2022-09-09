@@ -65,3 +65,92 @@ export const rotate3d = keyframes({
     transform: 'rotateY(1turn)',
   },
 });
+
+export const fadeInLeft = keyframes({
+  '0%': {
+    opacity: 0,
+    transform: 'translate3d(-100%,0,0)',
+  },
+  '100%': {
+    opacity: 1,
+    transform: 'translateZ(0)',
+  },
+});
+
+export const fadeInRight = keyframes({
+  '0%': {
+    opacity: 0,
+    transform: 'translate3d(100%,0,0)',
+  },
+  '100%': {
+    opacity: 1,
+    transform: 'translateZ(0)',
+  },
+});
+
+export const fadeInDown = keyframes({
+  '0%': {
+    opacity: 0,
+    transform: 'translate3d(0,100%,0)',
+  },
+  '100%': {
+    opacity: 1,
+    transform: 'translateZ(0)',
+  },
+});
+
+export const fadeInUp = keyframes({
+  '0%': {
+    opacity: 0,
+    transform: 'translate3d(0,-100%,0)',
+  },
+  '100%': {
+    opacity: 1,
+    transform: 'translateZ(0)',
+  },
+});
+
+export const zoomIn = keyframes({
+  '0%': {
+    opacity: 0,
+    transform: 'scale3d(.3,.3,.3)',
+  },
+  '50%': {
+    opacity: 1,
+  },
+});
+
+export const bounceIn = keyframes({
+  '0%': {
+    opacity: 0,
+    transform: 'scale3d(.3,.3,.3)',
+  },
+  '20%': {
+    transform: 'scale3d(1.1,1.1,1.1)',
+  },
+  '40%': {
+    transform: 'scale3d(.9,.9,.9)',
+  },
+  '60%': {
+    opacity: 1,
+    transform: 'scale3d(1.03,1.03,1.03)',
+  },
+  '80%': {
+    transform: 'scale3d(.97,.97,.97)',
+  },
+  '100%': {
+    opacity: 1,
+    transform: 'scaleX(1)',
+  },
+});
+
+export const rotateIn = keyframes({
+  '0%': {
+    opacity: 0,
+    transform: 'rotate(-200deg)',
+  },
+  '100%': {
+    opacity: 1,
+    transform: 'translateZ(0)',
+  },
+});
