@@ -56,7 +56,7 @@ export default function Banner({}: Props) {
         </Box>
       ))}
       <SeoText />
-      <Container>
+      <Container lg>
         <Grid.Container gap={2}>
           <Grid xs={12} sm={6} direction="column">
             <Text

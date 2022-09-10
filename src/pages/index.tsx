@@ -12,6 +12,7 @@ import Head from 'next/head';
 
 import logo from '@/app/assets/images/logo.png';
 import Banner from '@/components/banner/banner';
+import Features from '@/components/features/features';
 
 const Home: NextPage = () => {
   const collapseItems = [
@@ -150,6 +151,7 @@ const Home: NextPage = () => {
       <Banner />
 
       <Container lg>
+        <Features />
         <Content />
       </Container>
     </>
